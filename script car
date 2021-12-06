@@ -1,0 +1,31 @@
+helo. This is me prime script for Roblox . 
+
+
+
+
+
+
+
+
+
+
+
+script:
+
+
+
+
+script.Parent.Touched:Connect(function(part)
+	if part:FindFirstChild("SignalValues") == nil then
+		
+	else
+		if part:FindFirstChild("SignalValues").SignalType.Value == "TriggerOnly" then
+			part:FindFirstChild("SignalValues").Triggered.Value = true
+		end
+		if part:FindFirstChild("SignalValues").SignalType.Value == "ActivateDelete" then
+			script.Parent.Parent.Parent.Parent.TrainValues.ActivateDelete.Value = true
+		end
+	end
+end) 
+
+the script is for car .
